@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foodie Voyager Budget App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #2F4F4F;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+label {
+	flex-basis: 100%;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	flex-basis: 70%;
+	padding: 5px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+button {
+	background-color: #2F4F4F;
+	color: #fff;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #6B8E23;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+li span {
+	margin-right: 10px;
+}
+
+footer {
+	background-color: #2F4F4F;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+  </style>
+</head>
+<body>
+	<header>
+		<h1>Foodie Voyager Budget App</h1>
+	</header>
+	
+	<main>
+		<section id="budget">
+			<h2>Budget:</h2>
+			<form>
+				<label for="budget-input">Enter your budget:</label>
+				<input type="text" id="budget-input">
+				<button id="budget-button">Set Budget</button>
+			</form>
+		</section>
+		
+		<section id="expenses">
+			<h2>Expenses:</h2>
+			<form>
+				<label for="expense-name">Enter expense name:</label>
+				<input type="text" id="expense-name">
+				<label for="expense-amount">Enter expense amount:</label>
+				<input type="text" id="expense-amount">
+				<button id="expense-button">Add Expense</button>
+			</form>
+			<ul id="expense-list">
+				<!-- List of expenses will be dynamically generated here -->
+			</ul>
+		</section>
+		
+		<section id="balance">
+			<h2>Balance:</h2>
+			<p id="balance-amount">0.00</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2021 Foodie Voyager Budget App</p>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>
