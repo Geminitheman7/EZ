@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Foodie Voyager Budget App</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<main>
-		<div class="container">
-			<h1>Foodie Voyager Budget App</h1>
-			<form>
-				<label for="budget-input">Enter your budget:</label>
-				<input type="number" id="budget-input" step="0.01">
-				<button id="budget-button">Set Budget</button>
-			</form>
-			<form>
-				<label for="expense-name">Expense Name:</label>
-				<input type="text" id="expense-name">
-				<label for="expense-amount">Expense Amount:</label>
-				<input type="number" id="expense-amount" step="0.01">
-				<button id="expense-button">Add Expense</button>
-			</form>
-			<div class="balance">
-				<h2>Balance:</h2>
-				<span id="balance-amount"></span>
-			</div>
-			<div class="expenses">
-				<h2>Expenses:</h2>
-				<ul id="expense-list"></ul>
-			</div>
-		</div>
-	</main>
-	<script src="app.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGP Lego Bricks</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Welcome to the RGP Lego bricks Website</h1>
+      <p>We offer quality products and services for all your needs.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Featured Products</h2>
+        <p>Check out our latest products!</p>
+        <a href='products.html'><button>View Products</button></a>
+      </section>
+
+      <section>
+        <h2>About Us</h2>
+        <p>Learn more about our company and what we do.</p>
+         <a href='about.html'><button>About Us</button></a>
+      </section>
+
+      <section>
+        <h2>Latest Blog Posts</h2>
+        <p>Read our latest blog posts for news and updates.</p>
+         <a href='blog.html'><button>View Blog</button></a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 RGP. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
