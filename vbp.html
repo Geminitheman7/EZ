@@ -33,5 +33,20 @@
 		</div>
 	</main>
 	<script src="app.js"></script>
+	<script>
+		window.onload = function() {
+			fetch('budget.php')
+				.then(response => response.text())
+				.then(data => {
+					if (data) {
+						const { budget, expenses } = JSON.parse(data);
+						budgetAmount = budget;
+						expenses = expenses;
+						updateExpenses();
+						updateBalance();
+					}
+				});
+		};
+	</script>
 </body>
 </html>
